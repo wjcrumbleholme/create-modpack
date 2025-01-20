@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "3B8AF43E1258A852", title: "&6Create Mods" }
+		{ id: "6927873FD129F027", title: "&6Other Mods" }
+		{ id: "2F38421156FE1702", title: "&6Exploration" }
+	]
+}

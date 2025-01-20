@@ -1,0 +1,580 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cataclysm_bosses"
+	group: "2F38421156FE1702"
+	icon: "cataclysm:void_core"
+	id: "00384F9EBD7E9E77"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Cataclysm is a mod that adds many new bosses, wepons and tools. Some of the bosses can be quite challenging, so make sure you are prepared to fight them."
+				""
+				"This is a suggested order to fight them in, from easiest to hardest:"
+				"- Netherite Monstrosity (&cNether&r)"
+				"- Ender Guardian (&dEnd&r)"
+				"- Harbinger (&aOverworld&r)"
+				"- Leviathan (&aOverworld&r)"
+				"- Maledicts (&aOverworld&r)"
+				"- Ancient Remnant (&aOverworld&r)"
+				"- Ignis (&cNether&r)"
+			]
+			icon: "cataclysm:void_core"
+			id: "1DC68FC25E78E5CF"
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "23A30DAF82A5E691"
+				title: "Cataclysm Info"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			disable_toast: true
+			id: "4C11A8BEC7AA61AD"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:overworld"
+				icon: "minecraft:grass_block"
+				id: "6A529A1FE46FD5D4"
+				title: "&aOverworld"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			icon: "minecraft:netherrack"
+			id: "7AFF575BC0CF5C36"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "080D9255A63239F8"
+				title: "&cThe Nether"
+				type: "dimension"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "2F181203F960938D"
+			shape: "octagon"
+			size: 2.0d
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:end_stone"
+				id: "1819FBD4129F9C26"
+				title: "&dThe End"
+				type: "dimension"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C11A8BEC7AA61AD"]
+			description: ["Ocean monuments have had a big upgrade"]
+			icon: "minecraft:prismarine"
+			id: "3A4DCFE4E7164ADA"
+			shape: "square"
+			size: 1.2d
+			tasks: [{
+				icon: "minecraft:prismarine"
+				id: "4FC1A55F86E785B6"
+				structure: "betteroceanmonuments:ocean_monument"
+				type: "structure"
+			}]
+			title: "Find an &bOcean Monument"
+			x: 3.0d
+			y: -4.8d
+		}
+		{
+			dependencies: ["3A4DCFE4E7164ADA"]
+			id: "352E4BE67DD7F3FB"
+			shape: "octagon"
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				id: "7B31BBAA07236149"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Defeat the &7Elder Guardian"
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4C11A8BEC7AA61AD"]
+			description: ["The &cHarbinger&r resides in the ancient factory. To find it you can use an Eye of Mech like an ender eye."]
+			id: "5EAF9DFF13FC177E"
+			shape: "square"
+			tasks: [
+				{
+					advancement: "cataclysm:find_ancient_factory"
+					criterion: ""
+					id: "297F3B216C844657"
+					type: "advancement"
+				}
+				{
+					id: "1C1C6C98D4103D5C"
+					item: "cataclysm:mech_eye"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Find an &8Ancient Factory"
+			x: 1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5EAF9DFF13FC177E"]
+			id: "49EAF6B5BB23A0FC"
+			shape: "octagon"
+			tasks: [{
+				advancement: "cataclysm:kill_harbinger"
+				criterion: ""
+				id: "285F9EC5327B0CEA"
+				type: "advancement"
+			}]
+			title: "Defeat the &cHarbinger"
+			x: 3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4C11A8BEC7AA61AD"]
+			description: ["The &5Leviathan&r resides in the Sunken City. To find it you can use an Eye of Abyss like an ender eye."]
+			id: "4964176ACDDB94D6"
+			shape: "square"
+			tasks: [
+				{
+					advancement: "cataclysm:find_sunken_city"
+					criterion: ""
+					id: "440816B5C169770B"
+					type: "advancement"
+				}
+				{
+					id: "67C52FA83A234C60"
+					item: "cataclysm:abyss_eye"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Find a &bSunken City"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4964176ACDDB94D6"]
+			description: [
+				"To awaken the &5Leviathan,&r you need to craft an Abyssal Sacrifice and click it on the Altar of Abyss. (You can get the materials to craft it in the Sunken City)"
+				""
+				"&cTIP:&f You can click amethyst crab meat on the altar of amethyst in the sunken city in order to bless it. (This is handy in the boss fight as it negates the effects)"
+			]
+			id: "6236CAEAF06F986D"
+			shape: "octagon"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_leviathan"
+					criterion: ""
+					id: "0C54D98C200F583A"
+					type: "advancement"
+				}
+				{
+					id: "1EBCAC2091494D70"
+					item: "cataclysm:abyssal_sacrifice"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Defeat the &5Leviathan"
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4C11A8BEC7AA61AD"]
+			description: ["The &6Ancient Remnant&r resides in the Cursed Pyramid. To find it you can use an Eye of Desert like an ender eye."]
+			id: "5FE2DF28566D9D0A"
+			shape: "square"
+			tasks: [
+				{
+					advancement: "cataclysm:find_cursed_pyramid"
+					criterion: ""
+					id: "2B022D6D5D5CF644"
+					type: "advancement"
+				}
+				{
+					id: "0F873E2F876A0D32"
+					item: "cataclysm:desert_eye"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Find a &eCursed Pyramid"
+			x: -1.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5FE2DF28566D9D0A"]
+			description: ["To awaken the &6Ancient Remnant&r, you need to find the Necklace of the desert. This can be obtained by brushing suspicious sand in the Cursed Pyramid."]
+			id: "7162171A08CC4474"
+			shape: "octagon"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_remnant"
+					criterion: ""
+					id: "1AB1F8C1A2EADE49"
+					type: "advancement"
+				}
+				{
+					id: "0DE67B926AE14976"
+					item: "cataclysm:necklace_of_the_desert"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Defeat the &6Ancient Remnant"
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4C11A8BEC7AA61AD"]
+			description: ["&9Maledictus&r resides in the Frosted Prison. To find it you can use an Eye of Curse like an ender eye."]
+			id: "09A478396DD8385B"
+			shape: "square"
+			tasks: [
+				{
+					advancement: "cataclysm:find_frosted_prison"
+					criterion: ""
+					id: "3F75A9377C52097F"
+					type: "advancement"
+				}
+				{
+					id: "451A1CAC873F2C4B"
+					item: "cataclysm:cursed_eye"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Find the &bFrosted Prison"
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["09A478396DD8385B"]
+			id: "66005028DA4CBC22"
+			shape: "octagon"
+			tasks: [{
+				advancement: "cataclysm:kill_maledictus"
+				criterion: ""
+				id: "429963A921AAD872"
+				type: "advancement"
+			}]
+			title: "Defeat &9Maledictus"
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7AFF575BC0CF5C36"]
+			description: ["&eIgnis&r resides in the Burning Arena. To find it you can use an Eye of Flame like an ender eye."]
+			id: "5F0C54230BA211C1"
+			shape: "square"
+			tasks: [
+				{
+					advancement: "cataclysm:find_burning_arena"
+					criterion: ""
+					id: "6E557D469541B81A"
+					type: "advancement"
+				}
+				{
+					id: "65ED4678A17619FA"
+					item: "cataclysm:flame_eye"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Find the &6Burning Arena"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F0C54230BA211C1"]
+			description: ["To awaken &eIgnis&r, click Burning Ashes onto the Altar of Fire. (You can get the ashes from a miniboss in the same location)"]
+			id: "7CCB1984584E606A"
+			shape: "octagon"
+			tasks: [
+				{
+					advancement: "cataclysm:kill_ignis"
+					criterion: ""
+					id: "35504DFA89AE9849"
+					type: "advancement"
+				}
+				{
+					id: "07DD030FA34BC8B9"
+					item: "cataclysm:burning_ashes"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Defeat &eIgnis"
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7AFF575BC0CF5C36"]
+			description: ["The &cNetherite Monstrosity&r resides in the Soul Forge. To find it you can use an Eye of Monstrous like an ender eye."]
+			id: "552E1538E1BC4A4C"
+			shape: "square"
+			tasks: [
+				{
+					advancement: "cataclysm:find_soul_black_smith"
+					criterion: ""
+					id: "55B76E63F38F8D1C"
+					type: "advancement"
+				}
+				{
+					id: "115B28092EEDB6AF"
+					item: "cataclysm:monstrous_eye"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Find a &8Soul Forge"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["552E1538E1BC4A4C"]
+			id: "06397BE350804B46"
+			shape: "octagon"
+			tasks: [{
+				advancement: "cataclysm:kill_monstrosity"
+				criterion: ""
+				id: "58F8BA2316E7F6F6"
+				type: "advancement"
+			}]
+			title: "Defeat the &cNetherite Monstrosity"
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7AFF575BC0CF5C36"]
+			id: "05702B975428F6E3"
+			shape: "square"
+			tasks: [{
+				advancement: "minecraft:nether/find_fortress"
+				criterion: ""
+				id: "1D9A71038F9874E7"
+				type: "advancement"
+			}]
+			title: "Locate a &4Nether Fortress"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["05702B975428F6E3"]
+			id: "1E6F558579753E1A"
+			shape: "octagon"
+			tasks: [{
+				advancement: "minecraft:nether/summon_wither"
+				criterion: ""
+				id: "2E7AA4428C701077"
+				type: "advancement"
+			}]
+			title: "Defeat the &0Wither"
+			x: 9.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2F181203F960938D"]
+			id: "12A6ABA35B14CA34"
+			shape: "octagon"
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "2C73EEAC3EA09F30"
+				type: "advancement"
+			}]
+			title: "Defeat the &5Ender Dragon"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2F181203F960938D"]
+			description: ["The &5Ender Golem&r and &5Ender Guardian&r reside in the Ruined Citadel. To find it you can use an Eye of Void like an ender eye."]
+			id: "7DB02B16F67227FD"
+			shape: "square"
+			tasks: [
+				{
+					advancement: "cataclysm:find_ruined_citadel"
+					criterion: ""
+					id: "23BDCD285C2BA7E2"
+					type: "advancement"
+				}
+				{
+					id: "35AF77305FD8116C"
+					item: "cataclysm:void_eye"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Locate a &eRunied Citadel"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7DB02B16F67227FD"]
+			id: "66FCADE97782247B"
+			shape: "octagon"
+			tasks: [{
+				advancement: "cataclysm:kill_ender_guardian"
+				criterion: ""
+				id: "13F40149B1B57E7B"
+				type: "advancement"
+			}]
+			title: "Defeat the &5Ender Guardian"
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7DB02B16F67227FD"]
+			id: "024B0263030DB8C7"
+			shape: "octagon"
+			tasks: [{
+				advancement: "cataclysm:kill_ender_golem"
+				criterion: ""
+				id: "4973C9A4EC639E99"
+				type: "advancement"
+			}]
+			title: "Defeat a &5Ender Golem"
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2F181203F960938D"]
+			description: ["Thow a Mysterious Worm into the void to summon the &5Void Worm&r."]
+			id: "7AB2DA8955F91D2F"
+			shape: "octagon"
+			tasks: [
+				{
+					advancement: "alexsmobs:alexsmobs/void_worm_kill"
+					criterion: ""
+					id: "128177FBA2747DB8"
+					type: "advancement"
+				}
+				{
+					id: "32AB08F541187802"
+					item: "alexsmobs:mysterious_worm"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Defeat the &5Void Worm"
+			x: -7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4C11A8BEC7AA61AD"]
+			description: ["You can locate the &5Void Blossom&r with a void lilly - just place it down and follow the particles."]
+			id: "6EFE917CA45CF9F7"
+			shape: "octagon"
+			tasks: [
+				{
+					advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
+					criterion: ""
+					id: "4FDD2F7D4D1A7D6D"
+					type: "advancement"
+				}
+				{
+					id: "08D3FE92EF0EC79D"
+					item: "bosses_of_mass_destruction:void_lily"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Kill the &5Void Blossom"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4C11A8BEC7AA61AD"]
+			description: ["You can locate the &5Void Blossom&r with a void lilly - just place it down and follow the particles."]
+			id: "23BBB4070981325D"
+			shape: "octagon"
+			tasks: [
+				{
+					advancement: "bosses_of_mass_destruction:adventure/void_blossom_defeat"
+					criterion: ""
+					id: "5A0C2323D94B5536"
+					type: "advancement"
+				}
+				{
+					id: "2196810B83892E7E"
+					item: "bosses_of_mass_destruction:void_lily"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Kill the &5Void Blossom"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4C11A8BEC7AA61AD"]
+			description: ["You can locate the &6Night Lich&r with a soul star - these are droped by mobs and you use them like ender eyes. To summon the boss, you put the soul stars in the pedestals."]
+			id: "4D1DA9858C07902E"
+			shape: "octagon"
+			tasks: [
+				{
+					advancement: "bosses_of_mass_destruction:adventure/night_lich_defeat"
+					criterion: ""
+					id: "6307D98811964C50"
+					type: "advancement"
+				}
+				{
+					id: "5CBBBD9995DA501A"
+					item: "bosses_of_mass_destruction:soul_star"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Kill the &6Night Lich"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2F181203F960938D"]
+			description: ["Use an ender eye on the spawning platform to summon an &5Obsidilith&r."]
+			id: "0D217D76F9F5D8F1"
+			shape: "octagon"
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:end/obsidilith_defeat"
+				criterion: ""
+				id: "6862BC5B2317A5A1"
+				type: "advancement"
+			}]
+			title: "Kill the &5Obsidilith"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7AFF575BC0CF5C36"]
+			description: ["When you find the area, break a ancient carved blackstone to awaken the &4Nether Gauntlet&r."]
+			id: "46ED6E654F93A575"
+			shape: "octagon"
+			tasks: [{
+				advancement: "bosses_of_mass_destruction:nether/gauntlet_defeat"
+				criterion: ""
+				id: "7FE320EEDA7D74A4"
+				type: "advancement"
+			}]
+			title: "Defeat the &4Nether Gauntlet"
+			x: 4.0d
+			y: 2.5d
+		}
+	]
+	title: " &c[Bosses][-]"
+}

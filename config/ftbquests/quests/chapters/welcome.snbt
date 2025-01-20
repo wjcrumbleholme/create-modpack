@@ -1,0 +1,199 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "welcome"
+	group: ""
+	icon: "handcrafted:stackable_book"
+	id: "3E34934F09B08365"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Welcome to the &aTHS Minegraft&r modpack, this quest guide is optional - but it may help you through different mods."
+				""
+				"There is some important information on this page - make sure to read it!"
+				""
+				"Most of the quests have been 'borrowed' from a modpack call All Of Create, but a few have been created by wjcrumbleholme"
+			]
+			icon: "create:wrench"
+			id: "6A52090D6BC064D7"
+			rewards: [{
+				count: 3
+				id: "26B707F49F695DEA"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			size: 2.0d
+			tasks: [{
+				id: "1B0800437C68C43A"
+				title: "Click me!"
+				type: "checkmark"
+			}]
+			title: "&eWelcome!"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A52090D6BC064D7"]
+			dependency_requirement: "one_completed"
+			description: [
+				"The icon in the top left of the screen is the &aFTB Teams &rmenu. This allows you to add other players to your team."
+				""
+				"On the right of the &aFTB Teams &ricon is the &6Quest Book &ricon, which allows you to access the &6Quest Book &rat any time."
+				""
+				"When you click the square at the top left of your player display, your &8Curios &rslots will become visible. Some items, such as relics that you find around the world can be equiped here."
+			]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftbteams:textures/teams.png"
+				}
+			}
+			id: "2958CA7FA6FD3E4F"
+			invisible_until_tasks: 1
+			subtitle: "Read my description!"
+			tasks: [
+				{
+					id: "0DD3C1416FC34FA1"
+					title: "Click me!"
+					type: "checkmark"
+				}
+				{
+					id: "1D486C4B0E66490C"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			title: "&2Inventory"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A52090D6BC064D7"]
+			description: [
+				"&9Tasks &rare things that need to be done to complete a quest. If a task is an item, clicking on it will show its recipe."
+				""
+				"&6Rewards &rare what you get after completing all &9Tasks&r. Click to claim."
+				""
+				"The pin icon at the top right will pin a quest to your screen."
+			]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftbquests:textures/item/book.png"
+				}
+			}
+			id: "175099CF5696829E"
+			invisible_until_tasks: 1
+			rewards: [{
+				count: 3
+				id: "34B145F40A6C1F3B"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			subtitle: "Read my description!"
+			tasks: [{
+				id: "21428FE253D34D4E"
+				title: "Quests"
+				type: "checkmark"
+			}]
+			title: "&6Quests"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6A52090D6BC064D7"]
+			description: [
+				"Press &bR &rwhile hovering over an item to view its Recipe"
+				""
+				"Press &bU &rwhile hovering over an item to view its Uses"
+				""
+				"Press &bRight Click &rwhile crouching to hold a block. (Useful for chests, doesn't work on all blocks)"
+				""
+				"Press &bC &rto Zoom"
+				""
+				"Press &bM &rto open the World Map"
+				""
+				"Press &bU&r to see Player Death History"
+			]
+			hide_until_deps_visible: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:textures/icons/player.png"
+				}
+			}
+			id: "2165E80C52C79992"
+			invisible_until_tasks: 1
+			subtitle: "Read my description! Make sure to scroll down."
+			tasks: [{
+				id: "6A64112F92690241"
+				title: "Click me!"
+				type: "checkmark"
+			}]
+			title: "&9Important Controls"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A52090D6BC064D7"]
+			description: [
+				"At the bottom of the inventory, you may have noticed a search bar."
+				""
+				"This is the &dJust Enough Items&r, or &dJEI&r, search bar. "
+				""
+				"If you type \"Wood\", for example, the &dJEI &ritem list at the right of the screen will show all items with \"Wood\" in the name."
+				""
+				"Adding a @ at the start of the search query will show the items from a specific mod, for example @Adorn"
+				""
+				"To favorite an item, press &bA &rwhile hovering over it in the &dJEI &ritem list."
+				""
+				"To see how to craft an item, left click on it."
+				""
+				"To see what the item can be used for, right click on it."
+			]
+			hide_until_deps_visible: true
+			icon: "chiselsandbits:magnifying_glass"
+			id: "139DAA6E8CF4267A"
+			rewards: [{
+				id: "1AE5746200C26691"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Read my description!"
+			tasks: [{
+				id: "74C85348A8B837EB"
+				title: "Click me!"
+				type: "checkmark"
+			}]
+			title: "&bJust Enough Items (JEI)"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A52090D6BC064D7"]
+			icon: {
+				Count: 1
+				id: "minecraft:golden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6FCB831D5B4F3C3B"
+			tasks: [{
+				id: "7E182D6F8C910BA9"
+				title: "FTB Ultimine"
+				type: "checkmark"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+	]
+	title: " &eInfo[+]"
+}

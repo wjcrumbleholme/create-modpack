@@ -1,0 +1,441 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "transportation"
+	group: "3B8AF43E1258A852"
+	icon: "create:track_station"
+	id: "42A2A61E91FED9D3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["441EC0252962DDEF"]
+			description: [
+				"You can see how to create trains in the "
+				"{ \"text\": \"top right hand corner of the create chapter. \", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"672C61B048CB3B85\" } } "
+			]
+			id: "2F07087EE904E14F"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "All Aboarrrrddddd!! Get that train ready and moving!"
+			tasks: [{
+				id: "56AAD57D9C271FCF"
+				title: "TRAINS!!!"
+				type: "checkmark"
+			}]
+			title: "TRAINS!!!"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7478568263E05FEB"]
+			id: "65EA25D2DDEE694F"
+			rewards: [
+				{
+					id: "2904425A6A357EE3"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4CE309578D2A3919"
+					table_id: 5249651026717322459L
+					type: "random"
+				}
+			]
+			subtitle: "Slow but easy to maneuver. Immersive Aircraft"
+			tasks: [{
+				id: "39D98162099B089B"
+				item: "immersive_aircraft:airship"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7478568263E05FEB"]
+			id: "438ACCE0D9FC0BF3"
+			rewards: [
+				{
+					id: "6D5B59D40F845D1C"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7179A86BBA11228F"
+					table_id: 5249651026717322459L
+					type: "random"
+				}
+			]
+			subtitle: "Slow and fuel hungry but carries an entire storage."
+			tasks: [{
+				id: "7BD3EAA8151EDAAD"
+				item: "immersive_aircraft:cargo_airship"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7478568263E05FEB"]
+			id: "26D7ADB984AA5EB1"
+			rewards: [
+				{
+					id: "6F31F138958D1701"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "44366FF10242C895"
+					table_id: 5249651026717322459L
+					type: "random"
+				}
+			]
+			subtitle: "Fast and rather reliable. Make sure your runway is long enough"
+			tasks: [{
+				id: "160D7C8A249CD015"
+				item: "immersive_aircraft:biplane"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7478568263E05FEB"]
+			id: "3A95793467582862"
+			rewards: [
+				{
+					id: "0FB7B04BDFFB2707"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DC59875F2F8B790"
+					table_id: 5249651026717322459L
+					type: "random"
+				}
+			]
+			subtitle: "Muscle-powered copter. Give it a good push and off it flies!"
+			tasks: [{
+				id: "01E230A4AA53DBC3"
+				item: "immersive_aircraft:gyrodyne"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7478568263E05FEB"]
+			id: "4230AD68B84A6FBE"
+			rewards: [
+				{
+					id: "02463957CDD7F24E"
+					type: "xp"
+					xp: 100
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0CD8152D88BBDBC0"
+					table_id: 5001068052608706388L
+					type: "random"
+				}
+			]
+			subtitle: "Perfect for building, and that's about it."
+			tasks: [{
+				id: "1ED49B3DD597FE00"
+				item: "immersive_aircraft:quadrocopter"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["441EC0252962DDEF"]
+			id: "0FCB25BA5EB5E745"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6899794CB1F7EDC0"
+				table_id: 5001068052608706388L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "Chains together individual Minecarts, causing them to move as a group"
+			tasks: [{
+				id: "5BF0C40A7DF64D39"
+				item: "create:minecart_coupling"
+				type: "item"
+			}]
+			x: 4.2d
+			y: -0.6d
+		}
+		{
+			dependencies: ["0FCB25BA5EB5E745"]
+			id: "13D0C3A396600BC2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3AD03963FC4E46CA"
+				table_id: 5001068052608706388L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.3d
+			subtitle: "A Minecart that can fit many things."
+			tasks: [{
+				id: "17023C175FF84295"
+				item: "minecraft:minecart"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["13D0C3A396600BC2"]
+			id: "66BA2E2620CE457D"
+			shape: "square"
+			tasks: [{
+				id: "1AED7B5772FDFA28"
+				item: "minecraft:chest_minecart"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["13D0C3A396600BC2"]
+			id: "05A51DE582D03EEB"
+			shape: "square"
+			tasks: [{
+				id: "4B5EB9BA8BBBCA1E"
+				item: "minecraft:furnace_minecart"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["13D0C3A396600BC2"]
+			id: "705531718201E1EA"
+			shape: "square"
+			tasks: [{
+				id: "4F758873150E3C30"
+				item: "minecraft:tnt_minecart"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["13D0C3A396600BC2"]
+			id: "3475F448CA9DD03E"
+			shape: "square"
+			tasks: [{
+				id: "3B54C78523C473E8"
+				item: "minecraft:hopper_minecart"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["13D0C3A396600BC2"]
+			id: "334E2CEDA5DC2C60"
+			rewards: [{
+				id: "5BDECE211B25E3B8"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "square"
+			tasks: [{
+				id: "20A5D424AE4A02B3"
+				item: "supplementaries:dispenser_minecart"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["13D0C3A396600BC2"]
+			id: "6C734EADB3236A1E"
+			shape: "square"
+			tasks: [{
+				id: "3D9DEEA7B1058718"
+				item: "railways:benchcart"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["13D0C3A396600BC2"]
+			id: "74B7B1BC34DE221A"
+			shape: "square"
+			tasks: [{
+				id: "660940BBD6BD7575"
+				item: "railways:jukeboxcart"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			description: ["This chapter will guide you through how to create different modes of transport."]
+			icon: "immersive_aircraft:biplane"
+			id: "441EC0252962DDEF"
+			shape: "octagon"
+			size: 2.0d
+			subtitle: "(sort of)"
+			tasks: [{
+				id: "0F94F1389451D29E"
+				title: "Planes, Trains and Automobiles"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["441EC0252962DDEF"]
+			description: ["The mod Immersive Aircraft adds some planes and &cupgrades&r."]
+			icon: "immersive_aircraft:engine"
+			id: "7478568263E05FEB"
+			shape: "gear"
+			tasks: [{
+				id: "6775952C8805A6D6"
+				title: "Simple Aircrafts"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["441EC0252962DDEF"]
+			description: [
+				"With the clockwork mod, you can create almost any aircraft you can think of."
+				""
+				"However, the mod is a bit complex to understand - so hopefully these quests will help."
+				""
+			]
+			icon: "vs_clockwork:wanderlite_cube"
+			id: "4995F7CDD6EC0212"
+			shape: "gear"
+			tasks: [{
+				id: "04CE3AD416CC1E98"
+				title: "Advanced Aircrafts"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["441EC0252962DDEF"]
+			description: [
+				"The mod Trackwork adds the ability to create tanks with the create mod."
+				""
+			]
+			icon: "trackwork:large_phys_track"
+			id: "5EA6B96A8FE3F28F"
+			shape: "gear"
+			tasks: [{
+				id: "25F496979656D03D"
+				title: "Tanks??"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4995F7CDD6EC0212"]
+			description: ["Find Wanderlite ore underground. Be careful that it doesn't fly away!"]
+			id: "1B1F6F81F27B3DB8"
+			tasks: [{
+				id: "79F038FF6CECAE9D"
+				item: "vs_clockwork:wanderlite_crystal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1B1F6F81F27B3DB8"]
+			description: ["Sand the wanderlite crystal down to make a wanderlite cube! Then use a mechanical press to obtain a Wanderlite Matrix."]
+			id: "0544F4F4130FB33A"
+			tasks: [{
+				id: "645C01F16A74EA61"
+				item: "vs_clockwork:wanderlite_matrix"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0544F4F4130FB33A"]
+			description: ["Can be used to pick up physics objects."]
+			id: "639A4DA4DEE619F2"
+			tasks: [{
+				id: "3D6C6CE9664578B4"
+				item: "vs_clockwork:gravitron"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0544F4F4130FB33A"]
+			description: ["These two items are used to create a physics object - simply highlight the desired area with the Wanderwand and then put it in the Physics Infuser to give it physics! (this might take a moment)"]
+			id: "6B52042F4F395F73"
+			tasks: [
+				{
+					id: "24DAD173A368285B"
+					item: "vs_clockwork:wanderwand"
+					type: "item"
+				}
+				{
+					id: "387763AF3181DA01"
+					item: "vs_clockwork:physics_infuser"
+					type: "item"
+				}
+			]
+			x: -6.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0544F4F4130FB33A"]
+			description: ["This is useful when balancing aircraft as it can change the centre of mass."]
+			id: "1D35D5018959144E"
+			tasks: [{
+				id: "421AA03ED1D3C6BC"
+				item: "vs_clockwork:gyro"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["0544F4F4130FB33A"]
+			description: ["Can be used to build machines with physics"]
+			id: "261B96B4360C97E4"
+			tasks: [{
+				id: "62DF7F48E980DB4D"
+				item: "vs_clockwork:phys_bearing"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 7.0d
+		}
+		{
+			id: "5CE48823B8A3AF5A"
+			tasks: [{
+				id: "67AD6462F4015A26"
+				title: "1"
+				type: "checkmark"
+			}]
+			title: "1| Building an aircraft"
+			x: -1.0d
+			y: 3.5d
+		}
+	]
+	title: " &eTransportation[+]"
+}

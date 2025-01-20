@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "weaponry"
+	group: "3B8AF43E1258A852"
+	icon: "immersive_aircraft:rotary_cannon"
+	id: "558CE452736F1D46"
+	order_index: 7
+	quest_links: [ ]
+	quests: [ ]
+	title: " &eWeaponry[+]"
+}

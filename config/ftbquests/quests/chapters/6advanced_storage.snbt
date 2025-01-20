@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6advanced_storage"
+	group: "6927873FD129F027"
+	icon: "refinedstorage:creative_controller"
+	id: "6AEFBE0F7FB40478"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "&e Advanced Storage[+]"
+}

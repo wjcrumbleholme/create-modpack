@@ -1,0 +1,142 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "to_know"
+	group: ""
+	icon: "minecraft:spyglass"
+	id: "3264D70F279EF89B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "162240846ECB35F4"
+			rewards: [{
+				id: "2FFD2E5066B2CBE4"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "This is not a Star Wars film, don't think you have the Force."
+			tasks: [{
+				id: "2B5B0DE343634E07"
+				item: {
+					Count: 1
+					id: "create_sabers:brass_saber_white"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Lightsaber!!"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			id: "47C54B4EE4C8E6C4"
+			rewards: [{
+				id: "5DA45DF956E8EF6F"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Potato Cannons are a classic weapon to have, just remember to have suitable ammo in your inventory or this thing is useless."
+			tasks: [{
+				id: "4F90AFA3D6C80AB5"
+				item: {
+					Count: 1
+					id: "create:potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"Pattern Schematics can be placed on trains, gantry carriages or any other contraption to infinitely build iterations of the schematic."
+				""
+				"These pattern schematics can be used to repeat existing schematics, such as repeating a bridge to make it longer! Print in creative or put into a schematicannon to build!"
+			]
+			id: "473DE1FA2E18058A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1904745C408206DD"
+				table_id: 5249651026717322459L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5959A081E63A35D3"
+				item: "create_pattern_schematics:empty_pattern_schematic"
+				type: "item"
+			}]
+			title: "Pattern Schematic"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			id: "5B752C61AC815E9D"
+			rewards: [{
+				id: "2F80816B15B9DE18"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "A builder's best friend, this extension is going to be handy when reaching far and is perfect for building not only aesthetically, but also machinery with practicality."
+			tasks: [{
+				id: "3D128E10883CF4B3"
+				item: {
+					Count: 1
+					id: "create:extendo_grip"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -5.5d
+		}
+		{
+			id: "6AD8874426F94622"
+			rewards: [{
+				id: "567C4333C995E3AF"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Okay, so this thing, while not as powerful as a magical spawner, this one is actually craftable, but it requires liquid made out of certain mob drops in order to function."
+			tasks: [{
+				id: "4A7DD24DD0A4A620"
+				item: "create_mechanical_spawner:mechanical_spawner"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			id: "799CAC7467C485BA"
+			rewards: [{
+				id: "51FDF458B5C70AE1"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "So a conductor's cap is actually a very versatile item that allows one to create essentially a Create Golem. Ponder about its uses and consider this golem an assistant you'll need."
+			tasks: [{
+				id: "1E7A171D3DBBB7CD"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "railways:conductor_caps"
+					}
+				}
+				title: "Any Conductor Cap"
+				type: "item"
+			}]
+			title: "Conductor's Cap"
+			x: -4.0d
+			y: -3.0d
+		}
+	]
+	title: " &eHandy Tips \\& Items[+]"
+}
