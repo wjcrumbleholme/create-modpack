@@ -1,5 +1,8 @@
 logs/
-mods/
+mods/*
+!mods/.index/
+!mods/.index/**
+coremods/
 local/
 crash-reports/
 resourcepacks/
@@ -13,7 +16,6 @@ server-resource-packs/
 texture-packs/
 shader-packs/
 screenshots/
-coremods/
 wd_next.txt
 usercache.json
 ears-debug.log

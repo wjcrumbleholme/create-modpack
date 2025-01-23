@@ -1,0 +1,13 @@
+filename = 'L_Enders_Cataclysm-2.38- 1.20.1.jar'
+name = "L_Ender's Cataclysm"
+side = 'both'
+
+[download]
+hash = '7bdeb1d9c11e1231c39cb3142eb2c3e21d0e6da429516255d3d945a373ecf008149a4e10b8588dbc0d838319a60aa84a49c34ee717928ab84fb76dde1e50ed09'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/46KJle7n/versions/xDfxAoAX/L_Enders_Cataclysm-2.38- 1.20.1.jar'
+
+[update.modrinth]
+mod-id = '46KJle7n'
+version = 'xDfxAoAX'
