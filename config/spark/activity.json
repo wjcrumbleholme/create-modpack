@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "wjcrumbleholme",
+      "uniqueId": "80d8c15a-c668-4392-82ce-c32abc4c0516"
+    },
+    "time": 1737740634345,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/DD1PDjmLjf"
+    }
+  }
+]
