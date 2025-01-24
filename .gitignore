@@ -1,8 +1,4 @@
 logs/
-mods/*
-!mods/.index/
-!mods/.index/**
-coremods/
 local/
 crash-reports/
 resourcepacks/
