@@ -1,4 +1,6 @@
 logs/
+mods/mcef-cache/
+mods/mcef-libraries/
 local/
 crash-reports/
 resourcepacks/
