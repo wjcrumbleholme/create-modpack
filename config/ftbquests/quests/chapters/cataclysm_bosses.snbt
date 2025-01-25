@@ -82,7 +82,7 @@
 			icon: "minecraft:prismarine"
 			id: "3A4DCFE4E7164ADA"
 			shape: "square"
-			size: 1.2d
+			size: 1.0d
 			tasks: [{
 				icon: "minecraft:prismarine"
 				id: "4FC1A55F86E785B6"
@@ -576,5 +576,5 @@
 			y: 2.5d
 		}
 	]
-	title: " &c[Bosses][-]"
+	title: " &cBosses"
 }

@@ -1,0 +1,4 @@
+[20:57:32] [WARN] [FabricLoader/Resolution]: Mod resolution failed
+[20:57:32] [INFO] [FabricLoader/Resolution]: Immediate reason: [ROOT_FORCELOAD_SINGLE oculus 1.6.15a, UNIQUE_ID oculus]
+[20:57:32] [INFO] [FabricLoader/Resolution]: Reason: []
+[20:57:32] [INFO] [FabricLoader/Resolution]: Fix: add [], remove [oculus 1.6.15a, oculus 1.6.15a], replace []

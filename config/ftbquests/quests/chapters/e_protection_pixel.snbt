@@ -1,0 +1,947 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "e_protection_pixel"
+	group: "3B8AF43E1258A852"
+	icon: {
+		Count: 1
+		id: "protection_pixel:plague_helmet"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "1AA0EF26E94D3A15"
+	order_index: 9
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This mod adds some items and armor with cool abilities - the trade off is that it is slightly worse than vanilla armor. Most items in this mod require power in order to work - so you need to craft a combustion generator. (There is a quest that tells you more about this)"]
+			id: "72AF4874F7B5E272"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "Haha PP"
+			tasks: [{
+				id: "78DF1780E7197DD5"
+				title: "Create: Protection Pixel"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72AF4874F7B5E272"]
+			description: ["To upgrade gear, you need an Armor Upgrade Platform. To use it, supply lava to the bottom and then press RIGHT SHIFT to access the menu. You can then disassemble your gear in order to put upgrades on it."]
+			id: "545ADE033B544900"
+			tasks: [{
+				id: "02BA36CCAAD47560"
+				item: "protection_pixel:armorloadplatform"
+				type: "item"
+			}]
+			title: "How to upgrade gear"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["545ADE033B544900"]
+			description: ["The mid-tier upgrade. Provides the same amount of armor as the Alloy Plate but is slightly heavier."]
+			id: "304C5961BEBCB53C"
+			tasks: [{
+				id: "321FD142384252C9"
+				item: {
+					Count: 1
+					id: "protection_pixel:brassarmorplate"
+					tag: {
+						Damage: 0
+						armor: 2.0d
+						toughness: 1.0d
+						weight: 2.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["545ADE033B544900"]
+			description: ["The most basic upgrade. Provides little armor but also little weight."]
+			id: "49753C9DA28EF0C1"
+			tasks: [{
+				id: "6220190F6255D5C1"
+				item: {
+					Count: 1
+					id: "protection_pixel:ironarmorplate"
+					tag: {
+						Damage: 0
+						armor: 1.0d
+						toughness: 0.0d
+						weight: 1.0d
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["545ADE033B544900"]
+			description: ["Provides the same amount of armor as the brass plate, but slightly lighter."]
+			id: "4046DD0168944757"
+			tasks: [{
+				id: "26886507064BEBED"
+				item: {
+					Count: 1
+					id: "protection_pixel:alloyarmorplate"
+					tag: {
+						Damage: 0
+						armor: 2.0d
+						toughness: 1.0d
+						weight: 1.5d
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["72AF4874F7B5E272"]
+			description: ["The mod adds a lot of cool helmets, however you will need a combustion reactor to power them."]
+			id: "4DDECDDB68D9F791"
+			tasks: [{
+				id: "3F3424C79DEA649A"
+				title: "Helmets"
+				type: "checkmark"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72AF4874F7B5E272"]
+			id: "3657EE0E1BC766C3"
+			tasks: [{
+				id: "404B7D4D310832B7"
+				title: "Chestplates"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["72AF4874F7B5E272"]
+			description: ["The leggings require you to wear protective lining socks in order to wear them."]
+			id: "6A84ACE2FE03D62D"
+			tasks: [
+				{
+					id: "334D4AFFDE0C7FD8"
+					title: "Leggings"
+					type: "checkmark"
+				}
+				{
+					id: "51952AEEDC23A1DB"
+					item: {
+						Count: 1
+						id: "protection_pixel:socks_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4DDECDDB68D9F791"]
+			description: ["The helmet negates some effects - weakness, blindness, darkness and slowness. "]
+			id: "691C8A2D0002A27B"
+			subtitle: "No more milk!"
+			tasks: [
+				{
+					id: "555EEF42EEBBD5E9"
+					item: {
+						Count: 1
+						id: "protection_pixel:plague_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "53284745690B276E"
+					item: {
+						Count: 1
+						id: "protection_pixel:plagueas_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4DDECDDB68D9F791"]
+			description: ["Provides more protection than any other helmet."]
+			id: "2A77D5B5CE3C8995"
+			tasks: [
+				{
+					id: "57135E47DEE06656"
+					item: {
+						Count: 1
+						id: "protection_pixel:hammer_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A630DD749789216"
+					item: {
+						Count: 1
+						id: "protection_pixel:hammeras_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4DDECDDB68D9F791"]
+			description: ["Deals more damage based on the velocity that you hit something with."]
+			id: "4D5AD3B7B7333371"
+			tasks: [
+				{
+					id: "50F89246E1789A9A"
+					item: {
+						Count: 1
+						id: "protection_pixel:lancer_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BF4A68137BA556B"
+					item: {
+						Count: 1
+						id: "protection_pixel:lanceras_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4DDECDDB68D9F791"]
+			description: ["When crouching, it gives all creatures nearby a glowing effect."]
+			id: "44F875C92F8022BC"
+			tasks: [
+				{
+					id: "2B51E48440FCE787"
+					item: {
+						Count: 1
+						id: "protection_pixel:hunter_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D9C619D5A668F22"
+					item: {
+						Count: 1
+						id: "protection_pixel:hunteras_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4DDECDDB68D9F791"]
+			description: ["When swimming, you dont loose air bubbles. Also it reduces the time spent on fire."]
+			id: "13C71DC6ACC40D22"
+			tasks: [
+				{
+					id: "5F6BE44029E5D372"
+					item: {
+						Count: 1
+						id: "protection_pixel:closed_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5005735AE3C97456"
+					item: {
+						Count: 1
+						id: "protection_pixel:closedas_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4DDECDDB68D9F791"]
+			description: ["When you damage something, the helmet has a chance to convert some of your health into temporary hearts. "]
+			id: "7470505B01932BA3"
+			tasks: [
+				{
+					id: "419022BD684BFE9E"
+					item: {
+						Count: 1
+						id: "protection_pixel:bloodprisoner_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3EC12AD82A97F89D"
+					item: {
+						Count: 1
+						id: "protection_pixel:bloodprisoneras_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3657EE0E1BC766C3"]
+			description: ["Gives additional attack damage and speed."]
+			id: "633A25689CBEF574"
+			tasks: [
+				{
+					id: "7041973467A92C5D"
+					item: {
+						Count: 1
+						id: "protection_pixel:breaker_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30A7C2A9B1AF9525"
+					item: {
+						Count: 1
+						id: "protection_pixel:breakeras_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3657EE0E1BC766C3"]
+			description: ["Debuffs undead mobs as well as giving a slight increase to attack damage and swim speed."]
+			id: "541A6172D2852FF5"
+			tasks: [
+				{
+					id: "3B4F92862F7F7C8A"
+					item: {
+						Count: 1
+						id: "protection_pixel:wingsofprism_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44A5327818CDD4DE"
+					item: {
+						Count: 1
+						id: "protection_pixel:wingsofprismas_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["3657EE0E1BC766C3"]
+			description: ["Increases reach distance and also deals little damage over time to nearby enemies."]
+			id: "7DB63B3438FAE4A5"
+			tasks: [
+				{
+					id: "479A282A7E5FE59D"
+					item: {
+						Count: 1
+						id: "protection_pixel:workerhornet_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5A01305AC0F9C914"
+					item: {
+						Count: 1
+						id: "protection_pixel:workerhornetas_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3657EE0E1BC766C3"]
+			description: ["When you take lots of damage, or there are lots of mobs nearby, it will send out a pulse that knocks mobs back."]
+			id: "20087E3711056307"
+			tasks: [
+				{
+					id: "350030506391CA17"
+					item: {
+						Count: 1
+						id: "protection_pixel:magneticstorm_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "59E1ED18317A2011"
+					item: {
+						Count: 1
+						id: "protection_pixel:magneticstormas_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3657EE0E1BC766C3"]
+			description: ["Gives you an emergency pickaxe when crouching with an empty hand. Also breaks blocks that fall on you to prevent suffication."]
+			id: "040F61B32647A7DA"
+			tasks: [
+				{
+					id: "6BACB00D804C8C34"
+					item: {
+						Count: 1
+						id: "protection_pixel:pioneer_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C5602EBCD895637"
+					item: {
+						Count: 1
+						id: "protection_pixel:pioneeras_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3657EE0E1BC766C3"]
+			description: ["Has a chance to ignite enemies on fire. Allows you to dash fowards by holding sprint and jumping twice."]
+			id: "179BA6A0AC5E2F11"
+			tasks: [
+				{
+					id: "7EA153C989AF19BC"
+					item: {
+						Count: 1
+						id: "protection_pixel:hellsnake_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A950D8E2C57B0D9"
+					item: {
+						Count: 1
+						id: "protection_pixel:hellsnakeas_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3657EE0E1BC766C3"]
+			description: ["Summons a drone when attacking or being attacked that attacks and heals."]
+			id: "09946DB96FD0867E"
+			tasks: [
+				{
+					id: "20AEF16C16AB78EA"
+					item: {
+						Count: 1
+						id: "protection_pixel:falconnest_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F2563161E4A3012"
+					item: {
+						Count: 1
+						id: "protection_pixel:falconnestas_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3657EE0E1BC766C3"]
+			id: "4B0B5A4AC15E699C"
+			tasks: [{
+				id: "6B5F46E922E29339"
+				item: {
+					Count: 1
+					id: "protection_pixel:floatshield_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["6A84ACE2FE03D62D"]
+			description: ["Gives a slight speed boost and allows you to jump up 2 blocks occasionally (cooldown)."]
+			id: "7BECDB0E9FC7F00B"
+			tasks: [
+				{
+					id: "73B4F1D24A2DB71E"
+					item: {
+						Count: 1
+						id: "protection_pixel:slingshot_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1D1AE60BCF9A2127"
+					item: {
+						Count: 1
+						id: "protection_pixel:slingshotas_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A84ACE2FE03D62D"]
+			description: ["Reduces fall damage."]
+			id: "4169CDD917C8A92C"
+			tasks: [
+				{
+					id: "72C6F9AB8CB8F4D7"
+					item: {
+						Count: 1
+						id: "protection_pixel:anchorpoint_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0404AE68413532F4"
+					item: {
+						Count: 1
+						id: "protection_pixel:anchorpointas_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A84ACE2FE03D62D"]
+			description: ["Allow you to walk on liquids and powdered snow!"]
+			id: "1433A3D0B97F6F3D"
+			subtitle: "JESUS???"
+			tasks: [
+				{
+					id: "0D36DC1261EB72CE"
+					item: {
+						Count: 1
+						id: "protection_pixel:buoyancy_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73A934435F913DFF"
+					item: {
+						Count: 1
+						id: "protection_pixel:buoyancyas_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["72AF4874F7B5E272"]
+			description: ["The full set allows you to swim in lava lakes!"]
+			id: "3062ECDF07B1FA01"
+			tasks: [
+				{
+					id: "1418C5DC3E410CF9"
+					item: {
+						Count: 1
+						id: "protection_pixel:tosaki_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6AD6C7B77DF1F075"
+					item: {
+						Count: 1
+						id: "protection_pixel:tosaki_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7832DAB590B2CA6D"
+					item: {
+						Count: 1
+						id: "protection_pixel:tosaki_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["72AF4874F7B5E272"]
+			description: ["Useful items that go in your curios slot (click the dot near your player character in you inventory to open)."]
+			id: "390726458AF6F804"
+			tasks: [{
+				id: "5A8EAECD43E21532"
+				title: "Motor interface"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["390726458AF6F804"]
+			description: ["Charges up over time and then gives the ability to breath underwater for a short time."]
+			id: "595A20D19B82BC11"
+			tasks: [{
+				id: "5E4BF380779A1A8F"
+				item: {
+					Count: 1
+					id: "protection_pixel:tacticaloxygensupplydevice"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["390726458AF6F804"]
+			description: ["Works like an elytra but doesnt need rockets to boost forwards."]
+			id: "7413FE9C8878BCFE"
+			tasks: [{
+				id: "17D89EDE9AFB66BF"
+				item: {
+					Count: 1
+					id: "protection_pixel:openedmaneuveringwing"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["390726458AF6F804"]
+			description: ["Behaves like a jetpack, recharges over time."]
+			id: "6D46FE5300E70B97"
+			tasks: [{
+				id: "0AE7B8B561759ED4"
+				item: {
+					Count: 1
+					id: "protection_pixel:heatpulsethruster"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["390726458AF6F804"]
+			description: ["Allows you to carry heavier armor."]
+			id: "5403FB085CF5CD01"
+			tasks: [{
+				id: "718560A69D66DF57"
+				item: {
+					Count: 1
+					id: "protection_pixel:steambooster"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["390726458AF6F804"]
+			description: ["Allows you to fire grenades in frount of you by crouching and pressing space."]
+			id: "00CF87FB478CEB81"
+			tasks: [
+				{
+					id: "150D207791F8221B"
+					item: "protection_pixel:pneumaticgrenadelauncharm"
+					type: "item"
+				}
+				{
+					id: "26229A38765CEE6C"
+					item: "protection_pixel:pneumaticgrenade"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["390726458AF6F804"]
+			description: ["Allows you to grapple onto surfaces and mobs by crouching and pressing space."]
+			id: "37D455B7E994E367"
+			tasks: [
+				{
+					id: "2152FA9B83F3ECAC"
+					item: {
+						Count: 1
+						id: "protection_pixel:hookcannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "63DBC5636D08A336"
+					item: "protection_pixel:hookitem"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["07F6136B868109FA"]
+			description: ["Right click the reactor in order to fill it with a water tank and some flare rods (there is a minimum amount if it doesnt work) and then place it in your curios slot. (accessed by the little white button near your player model in your inventory)"]
+			id: "30C3B3079FBE355C"
+			tasks: [{
+				id: "544F316B520B9971"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 9
+						}
+					}
+					id: "protection_pixel:powerengine"
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["72AF4874F7B5E272"]
+			description: ["You need flare rods in order to fuel the combustion reactor as well as a water tank."]
+			id: "07F6136B868109FA"
+			tasks: [
+				{
+					count: 4L
+					id: "43C754181F7AE842"
+					item: {
+						Count: 1
+						id: "protection_pixel:flarerod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "096531E459409069"
+					item: {
+						Count: 1
+						id: "protection_pixel:watertank"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["72AF4874F7B5E272"]
+			description: ["Allows you to repair equipment and armor plates."]
+			id: "44E1F3CF4FC7DA98"
+			tasks: [
+				{
+					id: "2174F269934A6FA5"
+					item: {
+						Count: 1
+						id: "protection_pixel:equipmentkit"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "288F0CBCA502CFBA"
+					item: {
+						Count: 1
+						id: "protection_pixel:armorplatekit"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.0d
+		}
+	]
+	title: "&e Protection Pixel"
+}

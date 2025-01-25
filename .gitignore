@@ -1,4 +1,5 @@
 logs/
+mods/
 mods/mcef-cache/
 mods/mcef-libraries/
 local/
@@ -21,3 +22,4 @@ rhino.local.properties
 .qmenu_opened.marker
 emi.json
 usernamecache.json
+options.txt

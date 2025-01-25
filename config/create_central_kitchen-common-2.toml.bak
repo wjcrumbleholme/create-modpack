@@ -31,5 +31,3 @@
 	#[@cui:RequiresReload:server]
 	disableTransferCooldownForFarmersDelightBasket = true
 
-FarmersDelightBasket = true
-
